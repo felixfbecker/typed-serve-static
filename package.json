@@ -1,0 +1,13 @@
+{
+  "name": "typed-serve-static",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Typings for serve-static",
+  "author": "Felix Becker <felix.b@outlook.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "tslint": "^3.13.0",
+    "typescript": "^1.8.10",
+    "typings": "^1.3.1"
+  }
+}
