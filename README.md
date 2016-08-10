@@ -1,4 +1,5 @@
 # Typed serve-static
+[![Build Status](https://travis-ci.org/felixfbecker/typed-serve-static.svg?branch=master)](https://travis-ci.org/felixfbecker/typed-serve-static)
 
 Typescript Typings for [serve-static](https://www.npmjs.com/package/serve-static).
 
