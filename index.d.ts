@@ -1,5 +1,5 @@
 
-import {RequestHandler, Response} from 'express';
+import {IncomingMessage, ServerResponse} from 'http';
 import {Stats} from 'fs';
 
 /**
@@ -7,7 +7,7 @@ import {Stats} from 'fs';
  * The file to serve will be determined by combining req.url with the provided root directory.
  * When a file is not found, instead of sending a 404 response, this module will instead call next() to move on to the next middleware, allowing for stacking and fall-backs.
  */
-declare function serveStatic(root: string, options?: serveStatic.ServeStaticOptions): RequestHandler;
+declare function serveStatic(root: string, options?: serveStatic.ServeStaticOptions): (req: IncomingMessage, res: ServerResponse, next: (err?: any) => any) => void;
 
 declare namespace serveStatic {
     export interface ServeStaticOptions {
@@ -68,7 +68,7 @@ declare namespace serveStatic {
          * path the file path that is being sent
          * stat the stat object of the file that is being sent
          */
-        setHeaders?: (res: Response, path: string, stat: Stats) => any;
+        setHeaders?: (res: ServerResponse, path: string, stat: Stats) => any;
     }
 }
 

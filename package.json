@@ -5,6 +5,11 @@
   "description": "Typings for serve-static",
   "author": "Felix Becker <felix.b@outlook.com>",
   "license": "ISC",
+  "scripts": {
+    "build": "typings bundle -o test/bundle.d.ts",
+    "test": "tsc -p test",
+    "lint": "tslint -c tslint.json index.d.ts lib/**/*.d.ts test/**/*.ts"
+  },
   "devDependencies": {
     "tslint": "^3.13.0",
     "typescript": "^1.8.10",
