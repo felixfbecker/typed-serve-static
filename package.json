@@ -1,9 +1,9 @@
 {
-  "name": "typed-serve-static",
-  "version": "1.0.0",
-  "private": true,
-  "description": "Typings for serve-static",
+  "name": "@types/serve-static",
+  "version": "1.11.1",
+  "description": "TypeScript typings for serve-static",
   "author": "Felix Becker <felix.b@outlook.com>",
+  "typings": "index.d.ts",
   "license": "ISC",
   "scripts": {
     "build": "typings bundle -o test/bundle.d.ts",
@@ -14,5 +14,8 @@
     "tslint": "^5.2.0",
     "typescript": "^2.3.2",
     "typings": "^2.1.1"
+  },
+  "peerDependencies": {
+    "@types/node": "*"
   }
 }

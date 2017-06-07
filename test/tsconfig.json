@@ -3,10 +3,14 @@
     "target": "es5",
     "noImplicitAny": true,
     "module": "commonjs",
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "noEmit": true,
+    "typeRoots": [
+      "../typings/globals",
+      "../typings/modules"
+    ]
   },
-  "files": [
-    "../typings/index.d.ts",
+  "include": [
     "bundle.d.ts",
     "test.ts"
   ]

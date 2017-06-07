@@ -1,13 +1,16 @@
-# Typed serve-static
+
+# Typescript Typings for [serve-static](https://www.npmjs.com/package/serve-static)
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/types/npm-serve-static.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/types/npm-serve-static.svg?branch=master)](https://travis-ci.org/types/npm-serve-static)
 
-Typescript Typings for [serve-static](https://www.npmjs.com/package/serve-static).
-
 ## Installation
 ```sh
 typings install --save serve-static
+```
+or
+```
+npm install types/npm-express#<commit hash>
 ```
 
 ## Usage
